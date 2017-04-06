@@ -1,0 +1,11 @@
+<angular-modal>
+
+	<div modal-title>{{_options.title}}</div>
+
+	<div class="modal-body">{{_options.message}}</div>
+
+	<div class="modal-footer">
+		<button *ngFor="let button of _buttons" (click)="choose(button.choice)" type="button" class="btn btn-{{button.style}}" data-dismiss="modal">{{button.label}}</button>
+	</div>
+
+</angular-modal>
