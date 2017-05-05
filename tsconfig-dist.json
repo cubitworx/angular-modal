@@ -6,6 +6,7 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+		"declaration": true,
     "lib": [ "es2015", "dom" ],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -13,6 +14,13 @@
 			"node_modules/@types"
 		],
 		"rootDir": "src",
-		"outDir": "demo"
-  }
+		"outDir": "dist"
+  },
+	"include": [
+		"src/*"
+	],
+	"exclude": [
+		"node_modules/*",
+		"src/demo/*"
+	]
 }

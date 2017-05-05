@@ -5,8 +5,9 @@
       true,
       "check-space"
     ],
+    "curly": false,
     "eofline": true,
-    "forin": true,
+    "forin": false,
     "indent": [
       true,
       "tabs"
@@ -37,6 +38,7 @@
     "no-duplicate-variable": true,
     "no-empty": true,
     "no-eval": true,
+    "no-inferrable-types": true,
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-switch-case-fall-through": true,

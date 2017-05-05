@@ -2,10 +2,10 @@ import { ApplicationRef, ComponentFactoryResolver, Injector, ModuleWithProviders
 import { BrowserModule } from '@angular/platform-browser';
 
 // Local
-import { DialogComponent } from './dialog.component';
-import { DialogService } from './dialog.service';
-import { ModalComponent } from './modal.component';
-import { ModalService, ModalServiceConfig } from './modal.service';
+import { DialogComponent } from './module/dialog.component';
+import { DialogService } from './module/dialog.service';
+import { ModalComponent } from './module/modal.component';
+import { ModalService, ModalServiceConfig } from './module/modal.service';
 
 @NgModule({
 	declarations: [

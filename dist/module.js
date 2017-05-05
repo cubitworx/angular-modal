@@ -9,10 +9,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 // Local
-var dialog_component_1 = require("./dialog.component");
-var dialog_service_1 = require("./dialog.service");
-var modal_component_1 = require("./modal.component");
-var modal_service_1 = require("./modal.service");
+var dialog_component_1 = require("./module/dialog.component");
+var dialog_service_1 = require("./module/dialog.service");
+var modal_component_1 = require("./module/modal.component");
+var modal_service_1 = require("./module/modal.service");
 var ModalModule = ModalModule_1 = (function () {
     function ModalModule() {
     }
@@ -56,4 +56,4 @@ function modalServiceFactory(resolver, applicationRef, injector, options) {
 }
 exports.modalServiceFactory = modalServiceFactory;
 var ModalModule_1;
-//# sourceMappingURL=modal.module.js.map
+//# sourceMappingURL=module.js.map
