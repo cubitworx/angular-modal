@@ -1,26 +1,31 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+	"angularCompilerOptions": {
+		"skipTemplateCodegen": true,
+		"strictMetadataEmit": true
+	},
+	"compilerOptions": {
+		"baseUrl": ".",
 		"declaration": true,
-    "lib": [ "es2015", "dom" ],
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-		"typeRoots": [
-			"node_modules/@types"
-		],
-		"rootDir": "src",
-		"outDir": "dist"
-  },
-	"include": [
-		"src/*"
-	],
-	"exclude": [
-		"node_modules/*",
-		"src/demo/*"
+		"experimentalDecorators": true,
+		"inlineSources": true,
+		"lib": [ "es2015", "dom" ],
+		"module": "es2015",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"outDir": "./dist",
+		"paths": {
+			"@angular/core": ["./node_modules/@angular/core"],
+			"@angular/forms": ["./node_modules/@angular/forms"],
+			"@cubitworx/angular-i18n": ["./node_modules/@cubitworx/angular-i18n"]
+		},
+		"rootDir": "./build",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"stripInternal": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"target": "es5"
+	},
+	"files": [
+			"./build/src/index.ts"
 	]
 }
